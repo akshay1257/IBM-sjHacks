@@ -1,0 +1,26 @@
+{
+  "name": "disaster_relief_ui",
+  "version": "1.0.0",
+  "description": "A common platform for donor and logistics person",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshay1257/IBM-sjHacks.git"
+  },
+  "author": "akshay goel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akshay1257/IBM-sjHacks/issues"
+  },
+  "homepage": "https://github.com/akshay1257/IBM-sjHacks#readme",
+  "dependencies": {
+    "@angular/cli": "^6.2.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.13"
+  }
+}
