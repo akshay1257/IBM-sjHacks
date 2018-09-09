@@ -42,7 +42,7 @@
                  <td>Comforter</td>
                  <td>550</td>
                  <input class="form-control form-control-lg" type="text" placeholder="No. of items" id="inputLarge">
-                 </tr>   
+               </tr>   
                  <tr class="table-active">    
                     <td>Bed Sheets</td>
                     <td>2100</td>
@@ -63,25 +63,45 @@
                           <td>3350</td>
                           <input class="form-control form-control-lg" type="text" placeholder="No. of items" id="inputLarge">
                       
-                        </tr>
-                
-             
+                      </tr>          
            </table> 
-           <button class="btn btn-secondary my-2 my-sm-0" type="submit">Submit</button>
+
+
+           <form>
+              <fieldset>
+                <legend>Enter Personal Information</legend>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Sender Name</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    
+                  </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Phone Number</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Phone number">
+                </div>
+                
+                
+                <div class="form-group">
+                  <label for="exampleTextarea">Additional Information</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                
+              
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </fieldset>
+            </form>
+
+          
            
             </form>
         </div>
     </div>
 
-<div>{{donors}}</div>
-  
-
-    <div class ="row">
-          
-          <div>
-            <input type="button" (click) = "deleteContacts(contact._id)" value ="Delete" class ="btn btn-danger">
-          </div>
-    </div>
       <br>
   
 </div>
