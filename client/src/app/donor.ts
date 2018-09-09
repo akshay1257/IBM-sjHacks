@@ -1,8 +1,11 @@
-export class Donor{
-    d_name: string;
-    addr: string;
+export interface Donor{
+   // d_name: string;
+    //addr: string;
     items: {
-       item1: string,
-       item2: string
-    }
+        comforter: string,
+        bedsheets: string,
+        itmineral_waterem3: string,
+        scarfs: string,
+        Sugar: string
+     }
 }

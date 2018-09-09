@@ -1,3 +1,89 @@
-<p>
-  donors works!
-</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Disaster management</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Donor <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a ng-controller="ScrollCtrl" ng-click="gotoElement('middle')" class="nav-link" href="#survey">Driver</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<br>
+
+
+<div class = "container">
+    <div class="card border-primary" style="max-width: 300rem;">
+        <div class="card-header"><h3 class="page-header">Goods Required</h3></div>
+        <div class="card-body">    
+            <form (submit) = "addContacts()">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                 <th scope="col">Items</th>
+                 <th scope="col">Required</th>
+                 <th scope="col">Willing to Donate</th>
+                </tr>
+             </thead>       
+
+              
+               <tr class="table-active">         
+                 <td>Comforter</td>
+                 <td>550</td>
+                 <input class="form-control form-control-lg" type="text" placeholder="No. of items" id="inputLarge">
+                 </tr>   
+                 <tr class="table-active">    
+                    <td>Bed Sheets</td>
+                    <td>2100</td>
+                    <input class="form-control form-control-lg" type="text" placeholder="No. of items" id="inputLarge">
+                    </tr>
+                   <tr class="table-active">    
+                      <td>Mineral Water</td>
+                      <td>1500</td>
+                      <input class="form-control form-control-lg" type="text" placeholder="No. of items" id="inputLarge">
+                   </tr>
+                    <tr class="table-active">   
+                        <td>Women's Pant</td>
+                        <td>3350</td>
+                        <input class="form-control form-control-lg" type="text" placeholder="No. of items" id="inputLarge">
+                   </tr>
+                      <tr class="table-active"> 
+                          <td>Men's Pant</td>
+                          <td>3350</td>
+                          <input class="form-control form-control-lg" type="text" placeholder="No. of items" id="inputLarge">
+                      
+                        </tr>
+                
+             
+           </table> 
+           <button class="btn btn-secondary my-2 my-sm-0" type="submit">Submit</button>
+           
+            </form>
+        </div>
+    </div>
+
+<div>{{donors}}</div>
+  
+
+    <div class ="row">
+          
+          <div>
+            <input type="button" (click) = "deleteContacts(contact._id)" value ="Delete" class ="btn btn-danger">
+          </div>
+    </div>
+      <br>
+  
+</div>
+
+
