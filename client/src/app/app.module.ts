@@ -5,12 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { DonorsComponent } from './donors/donors.component';
-
+import { DriverComponent } from './driver/driver.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DonorsComponent,
+    DriverComponent
     
   ],
   imports: [
